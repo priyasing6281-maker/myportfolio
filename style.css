@@ -1450,3 +1450,144 @@ footer {
         height: 170px;
     }
 }
+/* =========================================
+   FINAL MOBILE FIX
+========================================= */
+
+@media screen and (max-width: 768px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Certifications - ONE CARD PER ROW */
+    .certification-container {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 20px !important;
+    }
+
+    .certificate-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* Projects - ONE CARD PER ROW */
+    .projects-container {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .project-card {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* Skills - ONE CARD PER ROW */
+    .skills-container {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .skill-category {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* ABOUT */
+    .about-container {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+
+    .about-card,
+    .about-content {
+        width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* EDUCATION */
+    .education-container {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .education-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* CONTACT - ONE COLUMN */
+    .contact-container {
+        width: 100% !important;
+        max-width: 100% !important;
+
+        display: grid !important;
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 35px !important;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+    }
+
+    /* FORM */
+    .contact-form {
+        box-sizing: border-box !important;
+        padding: 22px !important;
+    }
+
+    .form-group {
+        width: 100% !important;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* HERO */
+    .hero {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .hero-text,
+    .hero-photo {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    /* SECTION WIDTH */
+    .about-section,
+    .skills-section,
+    .projects-section,
+    .education-section,
+    .contact-section {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
